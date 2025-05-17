@@ -1,7 +1,8 @@
 "use client"
 
-import { LayoutDashboardIcon, MailIcon, PlusCircleIcon, ChevronDown, type LucideIcon, MoreHorizontalIcon, ShareIcon, FolderIcon } from "lucide-react"
+import { LayoutDashboardIcon, MailIcon, PlusCircleIcon, ChevronDown, type LucideIcon, MoreHorizontalIcon, ShareIcon, FolderIcon, Plus } from "lucide-react"
 
+import { useRouter } from 'next/navigation'
 
 import {
   DropdownMenu,
@@ -32,6 +33,7 @@ import {
 
 
 export function NavMain({
+  
   items,
 }: {
   items: {
@@ -47,6 +49,7 @@ export function NavMain({
   }[]
 }) {
     const { isMobile } = useSidebar()
+  const router = useRouter()
 
   return (
     <SidebarGroup>
@@ -67,7 +70,9 @@ export function NavMain({
                 </DropdownMenuTrigger>
                 
                 <DropdownMenuContent>
-                  <DropdownMenuItem onClick={() => console.log("Clique Criar Cobrança")}>Criar Cobrança</DropdownMenuItem>
+
+                  <DropdownMenuItem onClick={() =>  router.push('/dashboard') }>Menu Teste</DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => console.log("Clique Criar Cobrança")}>Criar Cobrança Simples</DropdownMenuItem>
                   <DropdownMenuItem onClick={() => console.log("Clique Criar Cobrança")}>Criar Cobrança c/ Split</DropdownMenuItem>
                   <DropdownMenuItem onClick={() => console.log("Clique Criar Link de Pagamento")}>Criar Link de Pagamento</DropdownMenuItem>
                   <DropdownMenuItem onClick={() => console.log("Clique Simular Vend")}>Simular Venda</DropdownMenuItem>
@@ -124,8 +129,13 @@ export function NavMain({
 
                 
             {item.data_menu_item?.map((subitem) => (
-              <DropdownMenuItem>
+              <DropdownMenuItem
+                key={subitem.title}
+                onClick={() => router.push(subitem.link)}
+              >
                 <span>{subitem.title}</span>
+
+
               </DropdownMenuItem>
             ))}
 

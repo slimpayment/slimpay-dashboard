@@ -48,7 +48,7 @@ export function SectionCards() {
     <div>
         <div className="mt-2 grid grid-cols-1 @xl/main:grid-cols-2 @5xl/main:grid-cols-4 gap-2 px-4 lg:px-6 *:data-[slot=card]:shadow-xs *:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card">
 
-            <Card className="@container/card">
+            <Card className="border border-gray-500 @container/card">
                 <CardHeader className="relative">
                     <div className="flex items-center justify-between">
                 <CardDescription>Saldo Disponível</CardDescription>
@@ -76,7 +76,7 @@ export function SectionCards() {
 
             </Card>
 
-            <Card className="@container/card">
+            <Card className="border border-gray-500 @container/card">
                 <CardHeader className="relative">
                     <div className="flex items-center justify-between">
                 <CardDescription >Saldo Pendente</CardDescription>
@@ -104,10 +104,7 @@ export function SectionCards() {
 
             </Card>
 
-
-
-
-            <Card className="@container/card">
+            <Card className="border border-gray-500 @container/card">
                 <CardHeader className="relative">
                     <div className="flex items-center justify-between">
                 <CardDescription>Cliente Cadastrados</CardDescription>

@@ -64,7 +64,7 @@ const data = {
       data_menu_item : [
         {
           title:"Listar Clientes" ,
-          link :"/menu1"
+          link :"/dashboard/customer"
         },
       ],
      
@@ -158,7 +158,7 @@ const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="offcanvas" {...props}>
+    <Sidebar collapsible="offcanvas" {...props} className="border-r border-gray-400">
       
       <SidebarHeader>
         <SidebarMenu>
@@ -186,10 +186,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 
         
 
-
-      <SidebarFooter>
-        <NavUser user={data.user} />
-      </SidebarFooter>
     </Sidebar>
   )
 }
