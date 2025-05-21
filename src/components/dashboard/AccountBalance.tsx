@@ -9,7 +9,7 @@ export function AccountBalance() {
   return (
     // <div className="flex items-center justify-between bg-white p-4 rounded shadow w-[250px]">
 
-    <div className="hidden md:flex flex items-center justify-between px-4 py-2">
+    <div className="md:flex flex items-center justify-between px-4 py-2">
 
       <div>
         <p className="text-sm font-semibold text-gray-900">Saldo em conta</p>

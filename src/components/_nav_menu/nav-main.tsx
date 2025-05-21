@@ -72,7 +72,7 @@ export function NavMain({
                 <DropdownMenuContent>
 
                   <DropdownMenuItem onClick={() =>  router.push('/dashboard') }>Menu Teste</DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => console.log("Clique Criar Cobrança")}>Criar Cobrança Simples</DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => router.push('/payment/create') }>Criar Cobrança</DropdownMenuItem>
                   <DropdownMenuItem onClick={() => console.log("Clique Criar Cobrança")}>Criar Cobrança c/ Split</DropdownMenuItem>
                   <DropdownMenuItem onClick={() => console.log("Clique Criar Link de Pagamento")}>Criar Link de Pagamento</DropdownMenuItem>
                   <DropdownMenuItem onClick={() => console.log("Clique Simular Vend")}>Simular Venda</DropdownMenuItem>

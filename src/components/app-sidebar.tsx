@@ -27,7 +27,7 @@ import { NavFerramenta } from "./_nav_menu/nav-ferramenta"
 
 import { NavSeller } from "./_nav_menu/nav-seller"
 
-import { NavMain } from "./nav-main"
+import { NavMain } from "./_nav_menu/nav-main"
 import { NavSecondary } from "./nav-secondary"
 import { NavUser } from "./nav-user"
 import {

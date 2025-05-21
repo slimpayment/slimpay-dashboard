@@ -49,27 +49,6 @@ import {
   User } from "lucide-react";
 import { HeaderDashboard } from "@/components/dashboard/header";
 
-const notifications = [
-  {
-    title: "Você Recebeu R$ 1.40",
-    description: "Referente ao Cashback do pedido Nº 225525.",
-  },
-  {
-    title: "You have a new message!",
-    description: "1 hour ago",
-  },
-  {
-    title: "Your subscription is expiring soon!",
-    description: "2 hours ago",
-  },
-]
-
-
-
-
-
-
-
 
 export default function Page() {
   return (
